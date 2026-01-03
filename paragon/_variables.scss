@@ -1,2 +1,56 @@
 // Use this file to set SASS variables for @edx/paragon
 // See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
+:root {
+	/* Existing */
+	--color-primary: #f5c362;
+	--color-blue-primary: #0166ff;
+	--color-white: #ffffff;
+
+	--color-secondary: #309dc1;
+	--color-gray-light: #6a6b6c;
+
+	--color-dark: #07152f;
+	--color-dark-alt: #07222c;
+	--color-dark-accent: #06053a;
+	--color-dark-purple: #190d30;
+
+	/* New – Header & UI */
+	--color-border-light: #d9d9db;
+	--color-border-avatar: #00000014;
+
+	--color-text-primary: #181d27;
+	--color-text-secondary: #535862;
+	--color-text-muted: #414651;
+
+	/* Shadows */
+	--shadow-card: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+	--shadow-button: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin container-layout {
+	width: 100%;
+
+	@media (width >= 40rem) {
+		max-width: 40rem;
+	}
+
+	@media (width >= 48rem) {
+		max-width: 48rem;
+	}
+
+	@media (width >= 64rem) {
+		max-width: 64rem;
+	}
+
+	@media (width >= 80rem) {
+		max-width: 80rem;
+	}
+
+	@media (width >= 96rem) {
+		max-width: 96rem;
+	}
+}
+
+.custom-container {
+	@include container-layout;
+}

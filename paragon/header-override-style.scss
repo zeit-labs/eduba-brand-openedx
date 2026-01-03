@@ -9,7 +9,7 @@
 				.menu {
 					.container-menu-dropdown {
 						padding: 0;
-						background: #fff;
+						background: var(--color-white);
 						display: flex;
 						justify-content: flex-end;
 						align-items: center;
@@ -19,8 +19,8 @@
 							height: 40px;
 							width: 40px;
 							border-radius: 50px;
-							border: 2px solid #00000014;
-							background-color: #fff;
+							border: 2px solid var(--color-border-avatar);
+							background-color: var(--color-white);
 							justify-content: center;
 							align-items: center;
 							img {
@@ -35,9 +35,9 @@
 								font-size: 13px;
 								line-height: 20px;
 								letter-spacing: 0;
-								color: #535862;
+								color: var(--color-text-secondary);
 								&:first-child {
-									color: #181d27;
+									color: var(--color-text-primary);
 								}
 							}
 						}
@@ -45,10 +45,10 @@
 					.dropdown-menu {
 						margin-top: 15px !important;
 						box-shadow: none !important;
-						border: 1px solid #d9d9db;
+						border: 1px solid var(--color-border-light);
 						border-radius: 7px;
 						.dropdown-item {
-							color: #414651;
+							color: var(--color-text-muted);
 							font-weight: 700;
 							font-size: 13px;
 							line-height: 20px;
@@ -68,13 +68,13 @@
 						border-radius: 7px;
 						text-decoration: none;
 						&.btn-link {
-							color: #6a6b6c;
-							background-color: #fff;
-							border: 1px solid #309dc1;
+							color: var(--color-gray-light);
+							background-color: var(--color-white);
+							border: 1px solid var(--color-secondary);
 						}
 						&.btn-outline-primary {
-							background-color: #f5c362;
-							color: #190d30;
+							background-color: var(--color-primary);
+							color: var(--color-dark-purple);
 						}
 					}
 				}
@@ -92,14 +92,14 @@
 					line-height: 150%;
 					letter-spacing: 0;
 					padding: 0;
-					color: #6a6b6c;
+					color: var(--color-gray-light);
 				}
 
 				.nav-link:hover,
 				.nav-link:focus,
 				.nav-link.active,
 				.expanded .nav-link {
-					color: #f5c362;
+					color: var(--color-primary);
 					cursor: pointer;
 				}
 
