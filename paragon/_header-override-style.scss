@@ -37,7 +37,7 @@ body .site-header-desktop {
 								letter-spacing: 0;
 								color: var(--color-text-secondary);
 								&:first-child {
-									color: var(--color-text-primary);
+									color: var(--color-text-red-200);
 								}
 							}
 						}
@@ -68,13 +68,20 @@ body .site-header-desktop {
 						border-radius: 7px;
 						text-decoration: none;
 						&.btn-link {
-							color: var(--color-gray-light);
-							background-color: var(--color-white);
-							border: 1px solid var(--color-secondary);
+							color: var(--color-blue-400);
+							border: 1px solid var(--color-blue-400);
+							border-radius: 7px;
+							padding: 12px 26px;
+							font-size: 15px;
+							font-weight: 700;
 						}
 						&.btn-outline-primary {
-							background-color: var(--color-primary);
-							color: var(--color-dark-purple);
+							background-color: var(--color-red-200);
+							color: var(--color-background-white);
+							border-radius: 7px;
+							padding: 12px 26px;
+							font-size: 15px;
+							font-weight: 700;
 						}
 					}
 				}
@@ -92,14 +99,14 @@ body .site-header-desktop {
 					line-height: 150%;
 					letter-spacing: 0;
 					padding: 0;
-					color: var(--color-gray-light);
+					color: var(--color-blue-400);
 				}
 
 				.nav-link:hover,
 				.nav-link:focus,
 				.nav-link.active,
 				.expanded .nav-link {
-					color: var(--color-primary);
+					color: var(--color-red-200);
 					cursor: pointer;
 				}
 
