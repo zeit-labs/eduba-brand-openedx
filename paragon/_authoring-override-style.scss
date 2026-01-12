@@ -1,0 +1,23 @@
+body {
+	.btn {
+		font-family: inherit !important;
+	}
+	.btn {
+		font-family: inherit;
+	}
+	.sub-header-title {
+		font-family: inherit;
+		&-breadcrumbs,
+		&-subtitle {
+			font-family: inherit;
+		}
+	}
+	.help-sidebar {
+		&-about {
+			&-descriptions,
+			&-link {
+				font-family: inherit;
+			}
+		}
+	}
+}
