@@ -5,14 +5,11 @@
 @import "./footer-override-style";
 @import "./authoring-override-style";
 
-:root {
-	--font-family-base: "Almarai", sans-serif;
-	--font-family-serif: "Almarai", serif;
-}
-
 html,
 body {
-	font-family: var(--font-family-base) !important;
+	* {
+		font-family: var(--font-family-base) !important;
+	}
 	button,
 	input,
 	select,
