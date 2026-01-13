@@ -5,6 +5,29 @@
 @import "./footer-override-style";
 @import "./authoring-override-style";
 
+:root {
+	--font-family-base: "Almarai", sans-serif;
+	--font-family-serif: "Almarai", serif;
+}
+
+html,
 body {
-	font-family: "Almarai", sans-serif;
+	font-family: var(--font-family-base) !important;
+	button,
+	input,
+	select,
+	textarea {
+		font-family: inherit;
+	}
+	.pgn__typography,
+	.pgn__text,
+	.pgn__heading,
+	.pgn__button,
+	.pgn__form-control,
+	.pgn__form-label,
+	.pgn__modal,
+	.pgn__dropdown,
+	.pgn__menu {
+		font-family: inherit;
+	}
 }
