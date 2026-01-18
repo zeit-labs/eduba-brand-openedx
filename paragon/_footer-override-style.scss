@@ -58,6 +58,9 @@ body .footer {
 					letter-spacing: 0;
 					text-align: center;
 					color: var(--color-white);
+					a {
+						color: var(--color-white);
+					}
 					@media (min-width: 640px) {
 						font-size: 14px !important;
 					}
