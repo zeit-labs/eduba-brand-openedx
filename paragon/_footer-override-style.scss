@@ -58,8 +58,15 @@ body .footer {
 					letter-spacing: 0;
 					text-align: center;
 					color: var(--color-white);
+
 					a {
 						color: var(--color-white);
+						&.tal-class {
+							display: inline-block;
+							width: 100%;
+							direction: ltr !important;
+							text-align: right !important;
+						}
 					}
 					@media (min-width: 640px) {
 						font-size: 14px !important;
