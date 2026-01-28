@@ -64,8 +64,16 @@ body .footer {
 						&.tal-class {
 							display: inline-block;
 							width: 100%;
-							direction: ltr !important;
-							text-align: end !important;
+							text-align: center !important;
+							@media (min-width: 768px) {
+								[dir="ltr"] & {
+									text-align: start !important;
+								}
+								[dir="rtl"] & {
+									direction: ltr !important;
+									text-align: end !important;
+								}
+							}
 						}
 					}
 					@media (min-width: 640px) {
