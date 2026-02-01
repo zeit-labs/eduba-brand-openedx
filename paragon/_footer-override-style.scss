@@ -65,6 +65,7 @@ body .footer {
 							display: inline-block;
 							width: 100%;
 							text-align: center !important;
+							direction: ltr;
 							@media (min-width: 768px) {
 								[dir="ltr"] & {
 									text-align: start !important;
