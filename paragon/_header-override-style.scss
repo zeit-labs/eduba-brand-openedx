@@ -13,8 +13,14 @@ body .site-header-desktop {
 						display: flex;
 						justify-content: flex-end;
 						align-items: center;
-						gap: 10px;
+						gap: 12px;
 						border: none;
+						text-transform: capitalize;
+						color: var(--color-neutral-900);
+						font-size: 13px;
+						line-height: 20px;
+						font-weight: 700;
+						letter-spacing: 0;
 						.container-avatar {
 							height: 40px;
 							width: 40px;
