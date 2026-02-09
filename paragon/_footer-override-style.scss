@@ -7,6 +7,7 @@ body .footer {
 		display: grid;
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 		gap: 40px;
+		padding: 0;
 		@media (width >= 48rem /* 768px */) {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
@@ -45,7 +46,7 @@ body .footer {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				gap: 8px;
+				gap: 18px;
 				a {
 					display: flex;
 					justify-content: center;
