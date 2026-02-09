@@ -1,7 +1,7 @@
 body .footer {
 	background-color: var(--color-blue-400) !important;
 	border: none !important;
-	padding-block: 60px !important;
+	padding-top: 60px !important;
 	.container-footer {
 		margin: 0 auto;
 		display: grid;
@@ -43,7 +43,7 @@ body .footer {
 			}
 			.social-media-links {
 				display: flex;
-				justify-content: start;
+				justify-content: center;
 				align-items: center;
 				gap: 8px;
 				a {
@@ -61,6 +61,9 @@ body .footer {
 					&:hover {
 						opacity: 0.8;
 					}
+				}
+				@media (min-width: 767px) {
+					justify-content: start;
 				}
 			}
 		}
@@ -141,6 +144,6 @@ body .footer {
 		letter-spacing: 0;
 		text-align: center;
 		color: var(--color-white);
-		padding-top: 40px;
+		padding: 40px 12px ;
 	}
 }
