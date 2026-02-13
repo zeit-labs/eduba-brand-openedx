@@ -2,6 +2,9 @@ body .site-header-desktop {
 	box-shadow: none !important ;
 	.container-header-desktop {
 		height: 70px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 80rem;
 		> div.nav-container {
 			justify-content: space-between;
 			height: 100%;
@@ -31,15 +34,43 @@ body .site-header-desktop {
 						font-weight: 700;
 						letter-spacing: 0;
 						.container-avatar {
-							height: 40px;
-							width: 40px;
+							height: 50px !important;
+							width: 50px !important;
 							border-radius: 50px;
 							border: 2px solid var(--color-border-avatar);
 							background-color: var(--color-white);
 							justify-content: center;
 							align-items: center;
+							svg {
+								height: 50px !important;
+								width: 50px !important;
+							}
 							img {
 								object-fit: contain;
+							}
+						}
+						.custom-info {
+							display: flex;
+							justify-content: start;
+							align-items: start;
+							flex-direction: column;
+							p {
+								margin: 0;
+								&:first-child {
+									font-size: 13px;
+									line-height: 1.25rem;
+									font-weight: 700;
+									letter-spacing: 0;
+									color: #171717;
+									text-transform: capitalize;
+								}
+								&:last-child {
+									font-size: 13px;
+									line-height: 1.25rem;
+									font-weight: 400;
+									letter-spacing: 0;
+									color: #525252;
+								}
 							}
 						}
 						.container-user-info {

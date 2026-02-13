@@ -64,24 +64,15 @@
 @mixin container-layout {
 	width: 100%;
 	display: inline-block;
-	// max-width: 80rem;
-	margin: 0 auto;
 	padding-inline: 0.5rem;
-	border: 1px solid #000;
+	margin-left: auto;
+	margin-right: auto;
 	@media (width >= 40rem) {
 		padding-inline: 1rem;
 	}
 
 	@media (width >= 64rem) {
 		padding-inline: 2rem;
-	}
-
-	@media (width >= 80rem) {
-		// max-width: 80rem;
-	}
-
-	@media (width >= 96rem) {
-		// max-width: 84rem;
 	}
 }
 
