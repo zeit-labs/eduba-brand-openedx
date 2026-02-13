@@ -2,9 +2,18 @@ body .site-header-desktop {
 	box-shadow: none !important ;
 	.container-header-desktop {
 		height: 70px;
-		> div {
+		> div.nav-container {
 			justify-content: space-between;
 			height: 100%;
+			.logo {
+				width: 114px !important;
+				height: 64px !important;
+				margin: 0 !important;
+				img {
+					width: 114px !important;
+					height: 64px !important;
+				}
+			}
 			.secondary-menu-container {
 				.menu {
 					.container-menu-dropdown {
