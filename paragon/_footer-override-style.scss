@@ -8,11 +8,25 @@ body .footer {
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 		gap: 40px;
 		padding: 0;
-		@media (width >= 48rem /* 768px */) {
+		width: 100% !important;
+		padding-inline: 0.5rem !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		@media (width >= 40rem) {
+			max-width: 40rem;
+			padding-inline: 1rem;
+		}
+		@media (width >= 48rem) {
+			max-width: 48rem;
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
-		@media (width >= 64rem /* 1024px */) {
+		@media (width >= 64rem) {
 			grid-template-columns: repeat(4, minmax(0, 1fr));
+			padding-inline: 2rem;
+			max-width: 70rem;
+		}
+		@media (width >= 96rem) {
+			max-width: 96rem;
 		}
 		.footer-logo {
 			a {
@@ -24,6 +38,9 @@ body .footer {
 				@media (min-width: 768px) {
 					justify-content: flex-start;
 					align-items: flex-start;
+				}
+				img {
+					width: 230px !important;
 				}
 			}
 			.social-media-title {
@@ -37,7 +54,6 @@ body .footer {
 				@media (min-width: 640px) {
 					font-size: 0.875rem;
 				}
-
 				@media (min-width: 768px) {
 					text-align: start;
 				}
@@ -61,6 +77,10 @@ body .footer {
 					color: #212e54;
 					&:hover {
 						opacity: 0.8;
+					}
+					svg {
+						width: 20px;
+						height: 20px;
 					}
 				}
 				@media (min-width: 767px) {
@@ -96,7 +116,7 @@ body .footer {
 					cursor: pointer;
 					font-weight: 400;
 					font-size: 12px !important;
-					line-height: 125%;
+					line-height: 150%;
 					letter-spacing: 0;
 					text-align: center;
 					color: var(--color-white);
@@ -134,7 +154,7 @@ body .footer {
 		justify-content: center;
 		padding-top: 20px;
 		.footer-divider {
-			width: 66.6667%;
+			width: 57.6667%;
 			height: 1px;
 			background-color: var(--color-white);
 		}
@@ -145,6 +165,6 @@ body .footer {
 		letter-spacing: 0;
 		text-align: center;
 		color: var(--color-white);
-		padding: 40px 12px ;
+		padding: 40px 12px;
 	}
 }
