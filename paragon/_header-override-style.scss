@@ -364,6 +364,9 @@ body .site-header-mobile {
 				}
 			}
 			.nav-item {
+				&:first-of-type{
+					border-bottom: 1px solid #e5e5e5;
+				}
 				&:last-child {
 					margin-top: 0.75rem;
 				}
