@@ -223,6 +223,22 @@ body .site-header-desktop {
 				}
 			}
 		}
+		.language-switcher-btn {
+			background-color: transparent;
+			border: none;
+			font-family: "Almarai", sans-serif;
+			border-radius: 0.375rem;
+			padding: 0.5rem 1rem;
+			font-size: 0.875rem;
+			font-weight: 500;
+			transition: background-color 0.2s ease;
+			@media (min-width: 1024px) {
+				margin: 0.5rem;
+			}
+			&:hover {
+				background-color: #f3f4f6;
+			}
+		}
 	}
 }
 
@@ -364,7 +380,7 @@ body .site-header-mobile {
 				}
 			}
 			.nav-item {
-				&:first-of-type{
+				&:first-of-type {
 					border-bottom: 1px solid #e5e5e5;
 				}
 				&:last-child {
@@ -379,6 +395,22 @@ body .site-header-mobile {
 		.expanded .nav-link {
 			color: var(--color-red-200);
 			cursor: pointer;
+		}
+	}
+	.language-switcher-btn {
+		background-color: transparent;
+		border: none;
+		font-family: "Almarai", sans-serif;
+		border-radius: 0.375rem;
+		padding: 0.5rem 1rem;
+		font-size: 0.875rem;
+		font-weight: 500;
+		transition: background-color 0.2s ease;
+		@media (min-width: 1024px) {
+			margin: 0.5rem;
+		}
+		&:hover {
+			background-color: #f3f4f6;
 		}
 	}
 }
